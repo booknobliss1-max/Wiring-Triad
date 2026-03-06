@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Wiring Triad — Creativity, Power, and Grounding in Society</title>
+  <meta name="description" content="A metaphorical framework using electrical wiring to understand roles in human systems: Black (Creative Innovation), White (Institutional Power), Green (Stabilizers & Bridges)."/>
+  <style>
+    :root {
+      --black: #0f0f0f;
+      --white: #f5f5f5;
+      --green: #2ecc71;
+      --gray: #444;
+      --light-gray: #e0e0e0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--black);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      color: white;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      color: #aaa;
+      max-width: 700px;
+      margin: 1rem auto 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .wires {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2.5rem;
+      margin: 4rem 0;
+    }
+
+    .wire-card {
+      background: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #222;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .wire-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    .wire-header {
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      font-weight: bold;
+      color: white;
+      position: relative;
+    }
+
+    .wire-header.black { background: linear-gradient(135deg, #1a1a1a, #000); }
+    .wire-header.white { background: linear-gradient(135deg, #e0e0e0, #b0b0b0); color: #111; }
+    .wire-header.green { background: linear-gradient(135deg, #27ae60, #2ecc71); }
+
+    .wire-header::after {
+      content: "WIRE";
+      position: absolute;
+      bottom: 12px;
+      font-size: 1.1rem;
+      opacity: 0.7;
+      letter-spacing: 4px;
+    }
+
+    .wire-content {
+      padding: 2rem;
+    }
+
+    .wire-content h2 {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    .black h2   { color: var(--green); }
+    .white h2   { color: #111; background: #ddd; display: inline-block; padding: 0.2rem 0.8rem; border-radius: 6px; }
+    .green h2   { color: var(--green); }
+
+    .diagram {
+      margin: 5rem 0;
+      text-align: center;
+    }
+
+    .wires-visual {
+      max-width: 800px;
+      margin: 2rem auto;
+      position: relative;
+    }
+
+    .wire-line {
+      position: absolute;
+      height: 8px;
+      border-radius: 4px;
+    }
+
+    .black-line   { background: #000; top: 35%; left: 10%; right: 10%; }
+    .white-line   { background: #ccc; top: 50%; left: 10%; right: 10%; }
+    .green-line   { background: var(--green); top: 65%; left: 10%; right: 10%; }
+
+    .junction {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: #222;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 3px solid #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #888;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #000;
+      color: #777;
+      font-size: 0.95rem;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.8rem; }
+      .wires { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Wiring Triad</h1>
+    <div class="subtitle">
+      Creativity, Power, and Grounding in Society
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section class="diagram">
+      <h2 style="margin-bottom: 2rem; text-align:center; color:#ccc;">The Interdependent Circuit</h2>
+      <div class="wires-visual">
+        <div class="wire-line black-line"></div>
+        <div class="wire-line white-line"></div>
+        <div class="wire-line green-line"></div>
+        <div class="junction" style="top:50%;">SYSTEM</div>
+      </div>
+      <p style="color:#888; max-width:720px; margin:2rem auto;">
+        No role exists in isolation. Creativity (black/hot), Institutional Power (white/neutral), and Grounding/Stabilization (green/ground) must complete the circuit together.
+      </p>
+    </section>
+
+    <div class="wires">
+
+      <div class="wire-card">
+        <div class="wire-header black">BLACK</div>
+        <div class="wire-content black">
+          <h2>Creative Innovation</h2>
+          <p>The hot wire — the source of energy, novelty, cultural momentum, artistic expression, intellectual disruption, and generative resistance. Often born from constraint, margins, or refusal.</p>
+        </div>
+      </div>
+
+      <div class="wire-card">
+        <div class="wire-header white">WHITE</div>
+        <div class="wire-content white">
+          <h2>Institutional Power</h2>
+          <p>The neutral/return path — policy, capital allocation, infrastructure, legal frameworks, legacy institutions, enforcement mechanisms. Historically shaped by accumulation and systemic advantage.</p>
+        </div>
+      </div>
+
+      <div class="wire-card">
+        <div class="wire-header green">GREEN</div>
+        <div class="wire-content green">
+          <h2>Grounding & Stabilization</h2>
+          <p>The safety/ground wire — mediators, caregivers, translators, community anchors, bridge-builders, support systems. Prevents shocks, maintains coherence, enables flow between disconnected parts.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <section style="margin: 6rem 0; text-align:center;">
+      <h2 style="font-size:2.2rem; margin-bottom:1.5rem;">Interdependence is the Design Principle</h2>
+      <p style="font-size:1.2rem; max-width:760px; margin:0 auto 2rem; color:#bbb;">
+        A society missing any one of these wires becomes unstable: creativity without grounding burns out, power without creativity stagnates, grounding without power lacks leverage.
+      </p>
+      <p style="color:#777; font-style:italic;">
+        This is not biology. This is not race. This is structure, flow, and function — observed across history and cultures.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Conceptual Framework • Not Prescriptive • Fluid & Adaptive</p>
+    <p style="margin-top:1rem;">The Wiring Triad — Exploring Human Systems Through Metaphor</p>
+  </footer>
+
+</body>
+</html>
