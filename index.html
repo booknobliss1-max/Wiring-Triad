@@ -149,20 +149,28 @@
       color: #888;
     }
 
-    /* Equal-size blank panel + image */
+    /* Equal-size video + image panel row */
     .panel-with-image {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     .blank-panel {
       background: #111;
       border: 1px solid #222;
       border-radius: 12px;
-      padding: 1.5rem;
+      padding: 0;
+      overflow: hidden;
       min-height: 280px;
+    }
+
+    .panel-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
     }
 
     .panel-side-image {
@@ -237,10 +245,17 @@
 
     </div>
 
-    <!-- Equal-size blank panel + image row -->
+    <!-- Equal-size video + image row -->
     <div class="panel-with-image">
-      <div class="blank-panel"></div>
+
+      <div class="blank-panel">
+        <video class="panel-video" autoplay muted controls>
+          <source src="FutureofLearning_culturecare.droneshw.mp4" type="video/mp4">
+        </video>
+      </div>
+
       <img src="imagesbinder.jpg.png" alt="Binder" class="panel-side-image">
+
     </div>
 
     <section style="margin: 6rem 0; text-align:center;">
