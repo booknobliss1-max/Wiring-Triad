@@ -1,104 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Wiring Triad: Creativity, Power, and Grounding in Society</title>
+  <meta charset="UTF-8" />
+  <title>Two Tabs Side by Side</title>
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
-      background: #f8f8f8;
-      color: #222;
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* prevent outer page scroll */
+      font-family: sans-serif;
     }
-    h1, h2 { text-align: center; }
-    
-    /* Creativity: Black/Hot wire */
-    .creativity {
-      background: #111;
-      color: #ffcc00; /* high-energy accent */
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin: 1rem 0;
-      border-left: 8px solid #000;
-    }
-    
-    /* Power: White/Neutral */
-    .power {
-      background: #f0f0f0;
-      color: #333;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin: 1rem 0;
-      border-left: 8px solid #ccc;
-    }
-    
-    /* Grounding: Green/Ground */
-    .grounding {
-      background: #e8f5e9;
-      color: #1b5e20;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin: 1rem 0;
-      border-left: 8px solid #2e7d32;
-    }
-    
-    .triad-container {
+
+    .container {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
+      height: 100vh;
+      width: 100vw;
     }
-    
-    .circuit-note {
-      font-style: italic;
-      text-align: center;
-      margin: 2rem 0;
-      padding: 1rem;
-      background: #fff3e0;
-      border: 1px solid #ff9800;
+
+    .pane {
+      flex: 1;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pane-header {
+      padding: 8px 10px;
+      background: #f0f0f0;
+      border-bottom: 1px solid #ccc;
+      font-size: 14px;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .pane iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      flex: 1;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Left tab -->
+    <div class="pane">
+      <div class="pane-header">
+        The Wiring Triad: Creativity, Power, and Grounding in Society
+      </div>
+      <iframe
+        src="<!-- put the first tab URL here, e.g. https://example.com -->">
+      </iframe>
+    </div>
 
-  <h1>The Wiring Triad</h1>
-  <p style="text-align:center; font-size:1.2rem;">
-    Creativity (Black/Hot) • Power (White/Neutral) • Grounding (Green/Ground)
-  </p>
-
-  <div class="triad-container">
-    <section class="creativity">
-      <h2>Creativity – Black/Hot Wire</h2>
-      <p>The active current: source of novelty, disruption, energy, forward drive. High-voltage ideas, art, rebellion, innovation from the edges.</p>
-      <p>Alone: volatile, burns out fast.</p>
-    </section>
-
-    <section class="power">
-      <h2>Power – White/Neutral Wire</h2>
-      <p>The return path: institutions, capital, structures, scaling mechanisms, enforcement. Channels energy into sustained output and legacy.</p>
-      <p>Alone: rigid, stagnant, blocks new flow.</p>
-    </section>
-
-    <section class="grounding">
-      <h2>Grounding – Green/Ground Wire</h2>
-      <p>The safety reference: care, mediation, ethics, community anchors, emotional stability, translation between parts. Prevents shocks, dissipates excess.</p>
-      <p>Alone: no leverage, inaction.</p>
-    </section>
+    <!-- Right tab -->
+    <div class="pane">
+      <div class="pane-header">
+        The Wiring Triad — Creativity, Power, and Grounding in Society (Local)
+      </div>
+      <iframe
+        src="file:///C:/Users/Fort%20Worth%20Mudpies/OneDrive/Desktop/Triad-3.html">
+      </iframe>
+    </div>
   </div>
-
-  <div class="circuit-note">
-    <strong>Core Principle:</strong> No wire exists in isolation. A complete circuit requires all three connected. Imbalance = failure: burnout, stagnation, exploitation, collapse.
-  </div>
-
-  <!-- Possibly an embedded or linked image reference -->
-  <!-- <img src="sistabigdress.png" alt="Wiring Triad Diagram" style="max-width:100%; display:block; margin:2rem auto;"> -->
-
-  <footer style="text-align:center; margin-top:3rem; font-size:0.9rem;">
-    Prototype from Zenodo record • Open for iteration
-  </footer>
-
 </body>
 </html>
