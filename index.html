@@ -160,7 +160,19 @@
     @media (max-width: 768px) {
       h1 { font-size: 2.8rem; }
       .wires { grid-template-columns: 1fr; }
-    }
+   .panel-with-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.panel-side-image {
+    width: 180px;   /* adjust size as needed */
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
   </style>
 </head>
 <body>
@@ -211,6 +223,14 @@
           <h2>Grounding & Stabilization</h2>
           <p>The safety/ground wire — mediators, caregivers, translators, community anchors, bridge-builders, support systems. Prevents shocks, maintains coherence, enables flow between disconnected parts.</p>
         </div>
+      <div class="panel-with-image">
+    <div class="panel blank-panel">
+        <!-- whatever content you already have -->
+    </div>
+
+    <img src="imagesbinder.jpg.png" alt="Binder" class="panel-side-image">
+</div>
+
       </div>
 
     </div>
@@ -235,6 +255,7 @@
 
 </body>
 </html>
+
 
 
 
