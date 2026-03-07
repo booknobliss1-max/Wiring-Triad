@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Wiring Triad — Creativity, Power, and Grounding in Society</title>
   <meta name="description" content="A metaphorical framework using electrical wiring to understand roles in human systems: Black (Creative Innovation), White (Institutional Power), Green (Stabilizers & Bridges)."/>
+
   <style>
     :root {
       --black: #0f0f0f;
@@ -148,6 +149,30 @@
       color: #888;
     }
 
+    /* Equal-size blank panel + image */
+    .panel-with-image {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .blank-panel {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 1.5rem;
+      min-height: 280px;
+    }
+
+    .panel-side-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #222;
+    }
+
     footer {
       text-align: center;
       padding: 3rem 1rem;
@@ -160,28 +185,16 @@
     @media (max-width: 768px) {
       h1 { font-size: 2.8rem; }
       .wires { grid-template-columns: 1fr; }
-   .panel-with-image {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.panel-side-image {
-    width: 180px;   /* adjust size as needed */
-    height: auto;
-    border-radius: 8px;
-    border: 1px solid #333;
-}
+      .panel-with-image { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>The Wiring Triad</h1>
-    <div class="subtitle">
-      Creativity, Power, and Grounding in Society
-    </div>
+    <div class="subtitle">Creativity, Power, and Grounding in Society</div>
   </header>
 
   <div class="container">
@@ -194,9 +207,6 @@
         <div class="wire-line green-line"></div>
         <div class="junction" style="top:50%;">SYSTEM</div>
       </div>
-      <p style="color:#888; max-width:720px; margin:2rem auto;">
-        
-      </p>
     </section>
 
     <div class="wires">
@@ -205,7 +215,7 @@
         <div class="wire-header black">BLACK</div>
         <div class="wire-content black">
           <h2>Creative Innovation</h2>
-          <p>The hot wire — the source of energy, novelty, cultural momentum, artistic expression, intellectual disruption, and generative resistance. Often born from constraint, margins, or refusal.</p>
+          <p>The hot wire — the source of energy, novelty, cultural momentum, artistic expression, intellectual disruption, and generative resistance.</p>
         </div>
       </div>
 
@@ -213,7 +223,7 @@
         <div class="wire-header white">WHITE</div>
         <div class="wire-content white">
           <h2>Institutional Power</h2>
-          <p>The neutral/return path — policy, capital allocation, infrastructure, legal frameworks, legacy institutions, enforcement mechanisms. Historically shaped by accumulation and systemic advantage.</p>
+          <p>The neutral/return path — policy, capital allocation, infrastructure, legal frameworks, legacy institutions, enforcement mechanisms.</p>
         </div>
       </div>
 
@@ -221,41 +231,31 @@
         <div class="wire-header green">GREEN</div>
         <div class="wire-content green">
           <h2>Grounding & Stabilization</h2>
-          <p>The safety/ground wire — mediators, caregivers, translators, community anchors, bridge-builders, support systems. Prevents shocks, maintains coherence, enables flow between disconnected parts.</p>
+          <p>The safety/ground wire — mediators, caregivers, translators, community anchors, bridge-builders, support systems.</p>
         </div>
-      <div class="panel-with-image">
-    <div class="panel blank-panel">
-        <!-- whatever content you already have -->
+      </div>
+
     </div>
 
-    <img src="imagesbinder.jpg.png" alt="Binder" class="panel-side-image">
-</div>
+    <!-- Equal-size blank panel + image row -->
+    <div class="panel-with-image">
+      <div class="blank-panel"></div>
+      <img src="imagesbinder.jpg.png" alt="Binder" class="panel-side-image">
+    </div>
 
     <section style="margin: 6rem 0; text-align:center;">
       <h2 style="font-size:2.2rem; margin-bottom:1.5rem;">Interdependence is the Design Principle</h2>
       <p style="font-size:1.2rem; max-width:760px; margin:0 auto 2rem; color:#bbb;">
         A society missing any one of these wires becomes unstable: creativity without grounding burns out, power without creativity stagnates, grounding without power lacks leverage.
       </p>
-      <p style="color:#777; font-style:italic;">
-        This is not biology. This is not race. This is structure, flow, and function — observed across history and cultures.
-      </p>
     </section>
 
   </div>
 
   <footer>
-    <p>Public Empowerment Framework • Future Forward • Fluid & Adaptive
-    </p>
-    <p style="margin-top:1rem;">The Wiring Triad — Exploring Human Systems & Resiliency
+    <p>Public Empowerment Framework • Future Forward • Fluid & Adaptive</p>
+    <p style="margin-top:1rem;">The Wiring Triad — Exploring Human Systems & Resiliency</p>
   </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
